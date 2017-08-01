@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './frontend/entry.jsx',
+  entry: './lib/js/main.js',
   output: {
-    filename: './bundle.js',
+    filename: './lib/js/bundle.js',
   },
   module: {
     loaders: [
@@ -12,13 +12,13 @@ module.exports = {
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015']
         }
       }
     ]
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '*']
+    extensions: ['.js', '*']
   }
 };
