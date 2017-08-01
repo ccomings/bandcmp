@@ -7,7 +7,8 @@ Bandcmp is a soundboard app created using Javascript, jQuery, and HTML/CSS. It i
 ## Functionality and MVPS
 
 * Replicate power, start/stop, tap, and individual beat keys
-* Selector knob from different instruments to play
+* Selector knob to select from different instruments to playback selected instruments
+* Once beat on certain instrument selector has been determined allow for new selected instrument to add into beat
 * Tempo and volume control knobs
 * smooth bug free navigation and sufficient styling
 * deploy on heroku
@@ -20,16 +21,16 @@ This app will consist of a single screen with soundboard controls, links to Gith
 ![Wireframe][wireframe]
 
 ## Architecture and Technologies
-This project will be implemented with JavaScript and jQuery for the overall structure and logic. The music setup and effects will be handled by the [web audio API][web_audio_api]. Rendering and DOM manipulation will be handled HTML5.
+This project will be implemented with JavaScript and jQuery for the overall structure and logic. The music setup and effects will be handled by the [web audio API][web_audio_api]. Rendering and DOM manipulation will be handled HTML/CSS. `board.js` will be responsible for holding all of the buttons's and selectors's logic `toggle on/off`.
 
 ## Timeline
-Day 1: Understand the web audio API. Setup webpack.config.js and package.json. Setup all files and entry file.
+Day 1: Understand the web audio API/ tone.js. Setup webpack.config.js and package.json. Setup all files and entry file.
 
-Day 2: Finish learning web audio API. Build out sound board. Implement sounds via files or html audio.
+Day 2: Finish learning web audio API/ tone.js. Build out sound board. Find audio file samples. Implement playback sounds via files or html audio. Design toggles and selector knobs.
 
-Day 3: Design knobs to control instrument selector and volume and tempo. Work on all button functionality.
+Day 3: Complete design knobs to control instrument selector and volume and tempo. Finish all button functionality.
 
-Day 4: Finish all styling.
+Day 4: Complete all styling. Work on and finish recording feature.
 
 
 ## Bonus Features
