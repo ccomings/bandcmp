@@ -35,6 +35,11 @@ li {
 
 }
 
+.board {
+  display: flex;
+  flex-direction: row;
+}
+
 .active {
   background-color: grey;
   opacity: .3;
@@ -59,4 +64,9 @@ li {
 
 .led.on {
   background-color: #FF0000;
+}
+
+#instruments {
+  display: flex;
+  flex-direction: column;
 }
