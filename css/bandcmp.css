@@ -38,6 +38,8 @@ li {
 .board {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .active {
@@ -59,7 +61,7 @@ li {
   border-radius: 50%;
   width: 6px;
   height: 6px;
-  background-color: #4C1904
+  background-color: #4C1904;
 }
 
 .led.on {
@@ -69,4 +71,20 @@ li {
 #instruments {
   display: flex;
   flex-direction: column;
+}
+
+.start_stop {
+  background-color: yellow;
+}
+
+.start_stop:hover {
+  background-color: #FFF3AC;
+}
+
+.reset {
+  background-color: #FF0000;
+}
+
+.reset:hover{
+  background-color: #FFAEAD;
 }
