@@ -135,12 +135,18 @@ li {
 
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   font-size: 72px;
   font-family: 'Monoton', cursive;
   background: -webkit-linear-gradient(left, #ab360a, #e5e4d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  align-self: flex-end;
 }
 
 .full_board {
