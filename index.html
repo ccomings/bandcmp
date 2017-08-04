@@ -9,14 +9,24 @@
   </head>
 
   <body>
-    <div>
-      <label id='power' class="power">POWER</label>
-      <label class="reset">Pattern Clear</label>
+    <div class='full_board'>
+      <div class='buttons'>
+        <div class='top-buttons'>
+          <button type='button' id='power' class="power">POWER</button>
+          <button type='button' class="reset">Pattern Clear</button>
+        </div>
+        <div class='start_stop'>
+          <label class="start">START</label>
+          <label>STOP</label>
+        </div>
+      </div>
       <div class="board">
-        <label class="start_stop">START | STOP</label>
         <ul id="instruments"></ul>
         <div class="drummachine"></div>
       </div>
+      <!-- <label>
+        <input id="slider" type='range' min='.1' max='100' step="1" value="5" />
+      </label> -->
     </div>
 
     <div class='sounds'>

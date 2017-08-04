@@ -11,12 +11,105 @@ html, body, div, span, button, h1, h2, h3, h4, a, ol, ul, li, form, label, artic
 
 }
 
-ul, li {
+html,
+body,
+div,
+span,
+nav,
+header,
+hr,
+main,
+section,
+article,
+footer,
+p,
+a,
+i,
+strong,
+small ,
+img,
+h1, h2,
+ul, li,
+time,
+form,
+label,
+fieldset,
+button,
+textarea,
+input
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
 }
 
-/*.on {
-  background-color: green;
-}*/
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #616161;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
 ul {
   display: flex;
@@ -30,9 +123,34 @@ li {
   padding: 2px;
   margin: 2px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  /*background-color: #ABABAB;*/
+  padding: 5px;
+  border-radius: 3px;
 
+}
+
+.full_board {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #2E2E2E;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  width: 150px;
+}
+
+.top-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .board {
@@ -40,17 +158,22 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .active {
-  background-color: grey;
+  background-color: #9E9E9E;
   opacity: .3;
 }
 
 .power {
   background-color: red;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+  border: black 3px solid;
 }
 
 .power.on {
@@ -62,6 +185,7 @@ li {
   width: 6px;
   height: 6px;
   background-color: #4C1904;
+  border: 1px solid black;
 }
 
 .led.on {
@@ -73,18 +197,51 @@ li {
   flex-direction: column;
 }
 
+ul#instruments > li {
+  background-color: #faf8bb;
+  width: 50px;
+  text-align: center;
+}
+
 .start_stop {
   background-color: yellow;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .start_stop:hover {
   background-color: #FFF3AC;
 }
 
+.start {
+  border-bottom: 5px black;
+  z-index: 1;
+}
+
 .reset {
   background-color: #FF0000;
+  width: 50px;
+  height: auto;
+  padding: 5px;
+  text-align: center;
 }
 
 .reset:hover{
   background-color: #FFAEAD;
+}
+
+.col0, .col1, .col2, .col3 {
+  background-color: #ab360a;
+}
+.col4, .col5, .col6, .col7 {
+  background-color: #d1740d;
+}
+.col8, .col9, .col10, .col11 {
+  background-color: #f3f00d;
+}
+.col12, .col13, .col14, .col15 {
+  background-color: #e5e4d0;
 }
