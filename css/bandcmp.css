@@ -129,10 +129,29 @@ li {
   margin: 2px;
   display: flex;
   justify-content: center;
-  /*background-color: #ABABAB;*/
   padding: 5px;
   border-radius: 3px;
+}
 
+h3 {
+  font-size: 18px;
+  color: #faf8bb;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: #faf8bb;
+}
+
+i {
+  padding: 5px;
+  margin: 10px;
+}
+
+i:hover {
+  background-color: #faf8bb;
+  border-radius: 5px;
 }
 
 .page {
@@ -140,10 +159,21 @@ li {
   flex-direction: column;
 }
 
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .title {
   font-size: 72px;
   font-family: 'Monoton', cursive;
-  background: -webkit-linear-gradient(left, #ab360a, #e5e4d0);
+  background: -webkit-linear-gradient(left, #ab360a, #d1740d, #f3f00d, #e5e4d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   align-self: flex-end;
@@ -180,6 +210,12 @@ li {
   padding: 10px;
 }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .active {
   background-color: #9E9E9E;
   opacity: .3;
@@ -209,8 +245,8 @@ li {
 
 .led {
   border-radius: 50%;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   background-color: #4C1904;
   border: 1px solid black;
 }
@@ -264,7 +300,7 @@ ul#instruments > li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font
+  padding: 5px 0;
 }
 
 .bpm {
