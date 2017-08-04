@@ -22,7 +22,8 @@ $beat.click(() => {
       audio.play();
     }
   }
-});```
+});
+```
 
 ### DrumLoop
 
@@ -41,7 +42,7 @@ let column = $(`li.col${this.currentNote}`);
       sound.play();
     }
   }
-  ```
+```
 
 ## Future Directions of Project
 In addition to the features already implemented, there are several features below that I will work on in the future.
