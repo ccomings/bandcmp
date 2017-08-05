@@ -60,5 +60,5 @@ Implementing volume adjustments for each instrument and a master volume. This wi
 
 
 
-[bandcmp live]: ccomings.github.io/bandcmp
+[bandcmp live]: https://ccomings.github.io/bandcmp/
 [roland link]: https://en.wikipedia.org/wiki/Roland_TR-808
